@@ -1,0 +1,31 @@
+VALUEDESK 2.8.1 | PANDUAN PENJALANKAN UNTUK DOSEN
+===============================================
+
+KEBUTUHAN:
+- Windows 10/11, Python 3.10+, koneksi internet untuk instalasi dan library UI browser
+- Tidak perlu VS Code / Streamlit / Node.js
+
+CARA MEMBUKA:
+1. Di GitHub, klik Code > Download ZIP, lalu Extract dan buka folder yang berisi server.py
+2. Double-click START_VALUDESK_WINDOWS.bat
+3. Tunggu sampai terminal menampilkan 'Application startup complete'
+4. Buka http://127.0.0.1:8000
+5. Jangan tutup terminal selama aplikasi digunakan
+
+ALUR DEMO:
+1. Executive Dashboard -> ringkasan valuasi KLBF.
+2. Historical Data Studio -> edit data keuangan atau harga saham; isikan sumber dan tanggal -> Apply & Recalculate.
+3. Model Assumptions -> atur revenue growth / WACC -> Recalculate DCF.
+4. DCF Valuation -> FCFF, skenario, sensitivitas; Step 2 -> review reference case; jika ingin mengganti dengan skenario pengguna, tinjau asumsi, konfirmasi dan hitung kembali.
+5. Relative Valuation -> pilih peer -> Apply Peer Selection.
+6. Valuation Decision -> alasan pemilihan metode, kisaran bersyarat, dan klasifikasi skenario BUY/HOLD/SELL (BUKAN rekomendasi investasi aktual).
+7. DCF Valuation -> Download Excel (.xlsx) untuk memeriksa rumus dan data aktif.
+
+BATASAN UTAMA:
+- HANYA KLBF.JK yang memiliki model DCF/Equity Bridge penuh.
+- TSPC, SIDO, DVLA, MERK, SOHO = peer/comparables ONLY.
+- FY2025 diterbitkan pada 2026; harga 30 Desember 2025 bersifat referensi historis, tidak boleh ditafsirkan sebagai rekomendasi investasi saat itu.
+- Nilai Rp837/saham = skenario analis bersyarat, BUKAN final fair value terverifikasi. Status SELL membandingkan Rp837 dengan harga historis Rp1.205 dan BUKAN sinyal trading saat ini.
+- Data input manual bersifat per sesi; gunakan Save/Import JSON untuk menyimpan input.
+- Hasil Excel dapat diekspor dari website; bukan file VBA .xlsm.
+- Bila Python belum terpasang, instal terlebih dahulu. Bila port 8000 digunakan aplikasi lain, tutup program tersebut.

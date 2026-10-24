@@ -1,0 +1,983 @@
+{
+  "audit_session_date": "2026-10-23",
+  "status": "QUALIFIED / NOT RATED",
+  "currency": "IDR",
+  "monetary_unit": "billion",
+  "sources": [
+    {
+      "issuer": "KLBF",
+      "period": "FY2025",
+      "document": "kalbe farma tbk_billingual_31_dec_2025_released (1).pdf",
+      "publication_date": "2026-03-30",
+      "date_status": "Dated issuer FY2025 results release; earliest complete report posting not independently established",
+      "url": "https://www.kalbe.co.id/en/news/detail/maintaining-growth-in-fy2025-sales-growth-of-83-and-net-profit-growth-of-131--"
+    },
+    {
+      "issuer": "KLBF",
+      "period": "H1 2026",
+      "document": "Kalbe Farma Tbk_billingual_30 Juni 2026.pdf",
+      "publication_date": "2026-07-31",
+      "date_status": "Issuer announcement and IDX filing path timestamp corroborate July31",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731135305-63285-0/Kalbe%20Farma%20Tbk_billingual_30%20Juni%202026.pdf"
+    },
+    {
+      "issuer": "SIDO",
+      "period": "FY2025",
+      "document": "FY-2025.pdf",
+      "publication_date": "2026-02-27",
+      "date_status": "Exact issuer financial report listing; signing date is February26, not publication",
+      "url": "https://investor.sidomuncul.co.id/en/financials.html"
+    },
+    {
+      "issuer": "TSPC",
+      "period": "FY2025",
+      "document": "TSPC_AR_dan_SR_2025.pdf",
+      "publication_date": "2026-03-30",
+      "date_status": "Dated FY2025 results release; annual-report first posting date unresolved; statements signed March27",
+      "url": "https://www.temposcangroup.com/public/files/investor/TSPC_FY_2025.pdf"
+    },
+    {
+      "issuer": "DVLA",
+      "period": "FY2025",
+      "document": "20260325154228_laporan-keuangan-desember-2025_en.pdf",
+      "publication_date": null,
+      "date_status": "Official PDF identified; HTTP503, IDX AR copy403. Filename suggests March25 but not accepted as verified publication",
+      "url": "https://www.darya-varia.com/uploads/pdf/20260325154228_laporan-keuangan-desember-2025_en.pdf"
+    },
+    {
+      "issuer": "MERK",
+      "period": "FY2025",
+      "document": "MERK_FY2025.pdf",
+      "publication_date": null,
+      "date_status": "Official PDF downloaded; completion date March30; filename suggests March31 filing. Exact public release not verified",
+      "url": "https://www.merckgroup.com/content/dam/web/corporate/non-images/country-specifics/indonesia/financial-statement/2026/Laporan%20Keuangan_31.12.2025_MERK_31032026%20%284%29.pdf"
+    },
+    {
+      "issuer": "SOHO",
+      "period": "FY2025",
+      "document": "SOHO_FY2025.pdf",
+      "publication_date": null,
+      "date_status": "Issuer PDF downloaded; March24 approval/signing, IDX path suggests March25 posting; exact earliest release not independently verified",
+      "url": "https://www.sohoglobalhealth.com/uploads/investor/financial_information/annual_file/9/Financial_Statements.pdf"
+    },
+    {
+      "issuer": "KLBF",
+      "period": "FY2022",
+      "document": "AR KLBF 2022_compressed.pdf",
+      "publication_date": null,
+      "date_status": "Uploaded historical report; publication date not established, not used for a point-in-time decision",
+      "url": "https://www.kalbe.co.id/en/investor-relations/annual-report"
+    },
+    {
+      "issuer": "KLBF",
+      "period": "FY2023",
+      "document": "AR KLBF 2023.pdf",
+      "publication_date": null,
+      "date_status": "Uploaded historical report; publication date not established, not used for a point-in-time decision",
+      "url": "https://www.kalbe.co.id/en/investor-relations/annual-report"
+    },
+    {
+      "issuer": "KLBF",
+      "period": "FY2024",
+      "document": "AR KLBF 2024.pdf",
+      "publication_date": null,
+      "date_status": "Uploaded historical report; publication date not established, not used for a point-in-time decision",
+      "url": "https://www.kalbe.co.id/en/investor-relations/annual-report"
+    }
+  ],
+  "input_audit": [
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Revenue",
+      "unit": "IDR billion",
+      "raw_yahoo": 35324.544,
+      "official": 35324.544,
+      "effective": 35324.544,
+      "status": "verified",
+      "source": "KLBF FY2025 financial statements PDF p16 / printed p4",
+      "reason": "Same amount; report in IDR million divided by 1,000."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Operating EBIT",
+      "unit": "IDR billion",
+      "raw_yahoo": 4545.017,
+      "official": 4581.879,
+      "effective": 4581.879,
+      "status": "verified reported subtotal",
+      "source": "KLBF FY2025 financial statements p16 / p4",
+      "reason": "14055.520 - 7345.158 - 1572.373 - 499.711 + 109.248 - 165.647. Yahoo difference -36.862 remains classification-unreconciled."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Yahoo EBIT",
+      "unit": "IDR billion",
+      "raw_yahoo": 4813.722,
+      "official": 4581.879,
+      "effective": null,
+      "status": "not appropriate as operating EBIT",
+      "source": "KLBF FY2025 financial statements p16,128",
+      "reason": "Yahoo EBIT = PBT 4778.475 + interest 35.247. Difference 231.843 = interest income179.197 + associates68.193 - financial administration15.547."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Normalized EBIT candidate",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 4544.039,
+      "effective": null,
+      "status": "analyst normalization, not verified sustainable EBIT",
+      "source": "KLBF FY2025 financial statements p129 / notes34–35",
+      "reason": "Reported EBIT + final tax on interest33.867 - disposal gain79.794 + write-off loss8.087. FX and tax penalties still require recurrence judgment. Do not double add disposal cash proceeds."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "D&A",
+      "unit": "IDR billion",
+      "raw_yahoo": 365.956,
+      "official": 814.193,
+      "effective": null,
+      "status": "unresolved; expense-based candidate",
+      "source": "KLBF FY2025 financial statements p90,93,123,127–128 / notes13,14,26,29–31",
+      "reason": "701.351 PPE depreciation +21.068 selling ROU depreciation +49.017 G&A amortization +42.757 R&D amortization. Yahoo365.956 misses manufacturing351.545 and R&D96.692. Candidate preserved, not certified."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Intangible amortization",
+      "unit": "IDR billion",
+      "raw_yahoo": 49.017,
+      "official": 77.825,
+      "effective": null,
+      "status": "verified components; reconciliation unresolved",
+      "source": "KLBF FY2025 financial statements p93 / note14",
+      "reason": "25.818 software +52.007 other intangibles =77.825; expenses49.017+42.757=91.774; difference13.949. Translation4.276 and accumulated amortization write-off54.652 are not P&L amortization."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Segment depreciation",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 737.196,
+      "effective": null,
+      "status": "cross-check unresolved",
+      "source": "KLBF FY2025 financial statements p123 / note26",
+      "reason": "737.196 - PPE701.351 - identified ROU21.068 =14.777 residual. Segment depreciation + intangible77.825 =815.021, which differs from expense candidate814.193 by0.828. No unsupported plug."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Simplified NCWC",
+      "unit": "IDR billion",
+      "raw_yahoo": 10233.665,
+      "official": 10233.665,
+      "effective": 10233.665,
+      "status": "verified narrow definition",
+      "source": "KLBF FY2025 financial statements p13–14",
+      "reason": "Trade receivables5651.335 + inventory6985.130 - trade payables2402.800. FY2024=9474.009; excludes all additional operating balances."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Change in simplified NCWC",
+      "unit": "IDR billion",
+      "raw_yahoo": 759.656,
+      "official": 759.656,
+      "effective": 759.656,
+      "status": "verified narrow change",
+      "source": "KLBF FY2025 financial statements p13–14",
+      "reason": "10233.665 -9474.009. Not comprehensive operating cash investment."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Classified core NCWC",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 9425.202999999998,
+      "effective": null,
+      "status": "partial; not complete NCWC",
+      "source": "KLBF FY2025 financial statements p13–14,84,109,130",
+      "reason": "Trade AR + inventory + ordinary prepaids - AP - accrued operating expenses - short-term employee liabilities. Exclude pension advance26.358 reclassified from noncurrent assets (noncash). Other balances remain unallocated."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Change in classified core NCWC",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 678.4509999999973,
+      "effective": null,
+      "status": "partial; not complete organic change",
+      "source": "KLBF FY2025 financial statements p13–14,84,109,130",
+      "reason": "2025 core 9425.203 minus 2024 core 8746.752. Excludes mixed other receivables/current assets/payables and tax balances. Currency/scope effects also need review."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Gross cash CapEx",
+      "unit": "IDR billion",
+      "raw_yahoo": 809.872,
+      "official": 809.872,
+      "effective": 809.872,
+      "status": "verified cash scope",
+      "source": "KLBF FY2025 financial statements p19 / printed p7",
+      "reason": "725.801 PPE +73.547 intangible +10.524 cash ROU. Not net investing cash flow799.892. Gross convention retains208.052 disposal proceeds separately."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Noncash new ROU assets",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 21.893,
+      "effective": null,
+      "status": "verified; lease policy unresolved",
+      "source": "KLBF FY2025 financial statements p147 / note45",
+      "reason": "Lease-as-financing reinvestment candidate adds21.893 to cashCapEx =831.765; keep lease debt in bridge, exclude lease principal from FCFF. Do not add40.585 reclassification again without prior cash timing reconciliation."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Historical effective tax fraction",
+      "unit": "fraction",
+      "raw_yahoo": 0.216408,
+      "official": 0.21640795442060487,
+      "effective": 0.21640795442060487,
+      "status": "verified arithmetic; not forecast rate",
+      "source": "KLBF FY2025 financial statements p16 / p4",
+      "reason": "Tax expense/PBT; not cash operating tax. 22% used only as labeled forecast scenario assumption; group/local incentive mix remains analyst judgment."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Cash",
+      "unit": "IDR billion",
+      "raw_yahoo": 4331.44,
+      "official": 4331.44,
+      "effective": 4331.44,
+      "status": "verified book balance",
+      "source": "KLBF FY2025 financial statements p13,75 / note4",
+      "reason": "Cash and equivalents only; no automatic assumption that every rupiah is excess cash."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Debt including leases/finance payables",
+      "unit": "IDR billion",
+      "raw_yahoo": 297.283,
+      "official": 298.842,
+      "effective": 298.842,
+      "status": "verified book principal",
+      "source": "KLBF FY2025 financial statements p14 / p2",
+      "reason": "112.350 bank +143.018 convertible +21.213+20.702 leases +0.901+0.658 finance payables. Yahoo omits1.559 finance payables. Market debt fair value not independently estimated."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "NCI book equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 1416.046,
+      "official": 1416.046,
+      "effective": 1416.046,
+      "status": "verified book balance; fair-value proxy only",
+      "source": "KLBF FY2025 financial statements p15 / p3",
+      "reason": "Consolidated FCFF requires NCI claim; book NCI is not automatically its economic value."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Acquisition payable",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 729.3829999999999,
+      "effective": 729.3829999999999,
+      "status": "verified contractual balance",
+      "source": "KLBF FY2025 financial statements p36 / note1d; p109 / note19",
+      "reason": "KGB transaction1062.263 less cash paid332.880 =729.383. Exclude from operating NCWC; recognize separate claim in EV bridge, with no repeat deduction through forecast FCFF."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Common equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 23312.457,
+      "official": 23312.457,
+      "effective": 23312.457,
+      "status": "verified",
+      "source": "KLBF FY2025 financial statements p15 / p3",
+      "reason": "Parent equity; excludes NCI1416.046."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Parent net income",
+      "unit": "IDR billion",
+      "raw_yahoo": 3664.998,
+      "official": 3664.998,
+      "effective": 3664.998,
+      "status": "verified",
+      "source": "KLBF FY2025 financial statements p17 / p5",
+      "reason": "P/E uses parent income, not consolidated3744.375."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": 45.28652861,
+      "official": 45.28652861,
+      "effective": 45.28652861,
+      "status": "verified FY-end",
+      "source": "KLBF FY2025 financial statements p15 / p3",
+      "reason": "Issued46.81339154bn minus treasury1.52686293bn; weighted-average45.52441bn is not a market cap denominator."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2025-12-31",
+      "field": "Nonoperating assets/total other claims",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": null,
+      "effective": null,
+      "status": "unresolved",
+      "source": "KLBF FY2025 financial statements p13–15,36,85–88,130–133",
+      "reason": "Financial investments154.143+265.096 and associates265.444 need fair-value/liquidity checks. Other noncurrent deposits, pension assets/liabilities and capex payables need consistent classification. No zero substituted."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Revenue H1",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 19478.807,
+      "effective": 19478.807,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Prior H1 17079.294; current period is six months, not a fiscal year."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Operating EBIT H1",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 2430.6549999999997,
+      "effective": 2430.6549999999997,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Calculated with same reported operating definition as FY2025."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Parent net income H1",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 1919.463,
+      "effective": 1919.463,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Prior H1 1974.938."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Cash",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 4831.831,
+      "effective": 4831.831,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Interim balance, cannot be assumed unchanged at October23."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Debt including leases/finance payables",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 826.4749999999999,
+      "effective": 826.4749999999999,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Sum bank, leases, finance payables and convertible note."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "NCI book equity",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 1434.962,
+      "effective": 1434.962,
+      "status": "verified unaudited report amount",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Not an October valuation-date claim estimate."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": null,
+      "official": 45.248860109999995,
+      "effective": 45.248860109999995,
+      "status": "verified June-end",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9",
+      "reason": "Treasury increased since2025; subsequent buybacks unverified."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Revenue TTM",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 37724.057,
+      "effective": 37724.057,
+      "status": "verified arithmetic from annual plus matching YTD",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9 and FY2025 p16–17",
+      "reason": "TTM = FY2025 +H1 2026 -H1 2025; not a forecast and not an October23 valuation."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Operating EBIT TTM",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 4505.241,
+      "effective": 4505.241,
+      "status": "verified arithmetic from annual plus matching YTD",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9 and FY2025 p16–17",
+      "reason": "TTM = FY2025 +H1 2026 -H1 2025; not a forecast and not an October23 valuation."
+    },
+    {
+      "ticker": "KLBF.JK",
+      "period": "2026-06-30",
+      "field": "Parent net income TTM",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 3609.523,
+      "effective": 3609.523,
+      "status": "verified arithmetic from annual plus matching YTD",
+      "source": "KLBF H1 2026 unaudited statements PDF p5–9 and FY2025 p16–17",
+      "reason": "TTM = FY2025 +H1 2026 -H1 2025; not a forecast and not an October23 valuation."
+    },
+    {
+      "ticker": "TSPC.JK",
+      "period": "2025-12-31",
+      "field": "Parent net income",
+      "unit": "IDR billion",
+      "raw_yahoo": 1406.763933286,
+      "official": 1406.763933286,
+      "effective": 1406.763933286,
+      "status": "verified report component; not full peer certification",
+      "source": "TSPC AR2025 PDF p102–103; full IDR divided1e9; Tempo Scan Pacific, not Taisho",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "TSPC.JK",
+      "period": "2025-12-31",
+      "field": "Common equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 9191.90882008,
+      "official": 9191.90882008,
+      "effective": 9191.90882008,
+      "status": "verified report component; not full peer certification",
+      "source": "TSPC AR2025 PDF p102–103; full IDR divided1e9; Tempo Scan Pacific, not Taisho",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "TSPC.JK",
+      "period": "2025-12-31",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": 4.5098643,
+      "official": 4.5098643,
+      "effective": 4.5098643,
+      "status": "verified report component; not full peer certification",
+      "source": "TSPC AR2025 PDF p102–103; full IDR divided1e9; Tempo Scan Pacific, not Taisho",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "TSPC.JK",
+      "period": "2025-12-31",
+      "field": "NCI",
+      "unit": "IDR billion",
+      "raw_yahoo": 468.21747942,
+      "official": 468.21747942,
+      "effective": 468.21747942,
+      "status": "verified report component; not full peer certification",
+      "source": "TSPC AR2025 PDF p102–103; full IDR divided1e9; Tempo Scan Pacific, not Taisho",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SIDO.JK",
+      "period": "2025-12-31",
+      "field": "Parent net income",
+      "unit": "IDR billion",
+      "raw_yahoo": 1229.202,
+      "official": 1229.202,
+      "effective": 1229.202,
+      "status": "verified report component; not full peer certification",
+      "source": "SIDO FY2025 PDF p14–16,78; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SIDO.JK",
+      "period": "2025-12-31",
+      "field": "Common equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 3120.427,
+      "official": 3120.427,
+      "effective": 3120.427,
+      "status": "verified report component; not full peer certification",
+      "source": "SIDO FY2025 PDF p14–16,78; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SIDO.JK",
+      "period": "2025-12-31",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": 29.4352,
+      "official": 29.4352,
+      "effective": 29.4352,
+      "status": "verified report component; not full peer certification",
+      "source": "SIDO FY2025 PDF p14–16,78; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SIDO.JK",
+      "period": "2025-12-31",
+      "field": "NCI",
+      "unit": "IDR billion",
+      "raw_yahoo": 0.007,
+      "official": 0.007,
+      "effective": 0.007,
+      "status": "verified report component; not full peer certification",
+      "source": "SIDO FY2025 PDF p14–16,78; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "MERK.JK",
+      "period": "2025-12-31",
+      "field": "Parent net income",
+      "unit": "IDR billion",
+      "raw_yahoo": 243.896434,
+      "official": 243.896434,
+      "effective": 243.896434,
+      "status": "verified report component; not full peer certification",
+      "source": "MERK FY2025 PDF p10–11, note15; thousands divided1e6; standalone statements no NCI",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "MERK.JK",
+      "period": "2025-12-31",
+      "field": "Common equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 975.714314,
+      "official": 975.714314,
+      "effective": 975.714314,
+      "status": "verified report component; not full peer certification",
+      "source": "MERK FY2025 PDF p10–11, note15; thousands divided1e6; standalone statements no NCI",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "MERK.JK",
+      "period": "2025-12-31",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": 0.448,
+      "official": 0.448,
+      "effective": 0.448,
+      "status": "verified report component; not full peer certification",
+      "source": "MERK FY2025 PDF p10–11, note15; thousands divided1e6; standalone statements no NCI",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "MERK.JK",
+      "period": "2025-12-31",
+      "field": "NCI",
+      "unit": "IDR billion",
+      "raw_yahoo": null,
+      "official": 0,
+      "effective": 0,
+      "status": "verified report component; not full peer certification",
+      "source": "MERK FY2025 PDF p10–11, note15; thousands divided1e6; standalone statements no NCI",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SOHO.JK",
+      "period": "2025-12-31",
+      "field": "Parent net income",
+      "unit": "IDR billion",
+      "raw_yahoo": 600.321,
+      "official": 600.321,
+      "effective": 600.321,
+      "status": "verified report component; not full peer certification",
+      "source": "SOHO FY2025 PDF p100–102; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SOHO.JK",
+      "period": "2025-12-31",
+      "field": "Common equity",
+      "unit": "IDR billion",
+      "raw_yahoo": 2583.002,
+      "official": 2583.002,
+      "effective": 2583.002,
+      "status": "verified report component; not full peer certification",
+      "source": "SOHO FY2025 PDF p100–102; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SOHO.JK",
+      "period": "2025-12-31",
+      "field": "Outstanding shares",
+      "unit": "billion shares",
+      "raw_yahoo": 12.69168239,
+      "official": 12.69168239,
+      "effective": 12.69168239,
+      "status": "verified report component; not full peer certification",
+      "source": "SOHO FY2025 PDF p100–102; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    },
+    {
+      "ticker": "SOHO.JK",
+      "period": "2025-12-31",
+      "field": "NCI",
+      "unit": "IDR billion",
+      "raw_yahoo": 0.0,
+      "official": 0,
+      "effective": 0,
+      "status": "verified report component; not full peer certification",
+      "source": "SOHO FY2025 PDF p100–102; millions divided1000",
+      "reason": "Standalone matched FY2025 input; valuation date still retrospective."
+    }
+  ],
+  "companies": {
+    "KLBF.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": "2026-03-30",
+      "publication_source": "https://www.kalbe.co.id/en/news/detail/maintaining-growth-in-fy2025-sales-growth-of-83-and-net-profit-growth-of-131--",
+      "inputs": {
+        "2025-12-31": {
+          "Revenue": {
+            "value": 35324.544,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p16"
+          },
+          "Operating EBIT": {
+            "value": 4581.879,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p16"
+          },
+          "Capital Expenditure": {
+            "value": 809.872,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p19"
+          },
+          "Cash": {
+            "value": 4331.44,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p13"
+          },
+          "Total Debt": {
+            "value": 298.842,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p14"
+          },
+          "Net Income (Parent)": {
+            "value": 3664.998,
+            "status": "verified",
+            "source": "KLBF FY2025 financial statements p17"
+          }
+        }
+      },
+      "peer_adjustments": {
+        "debt_billion": 298.842,
+        "information_date": "2026-03-30",
+        "note": "Official FY2025 p13–17 / debt adds finance payables1.559. D&A, investment and claims valuation unresolved."
+      }
+    },
+    "TSPC.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": "2026-03-30",
+      "publication_source": "https://www.temposcangroup.com/public/files/investor/TSPC_FY_2025.pdf",
+      "inputs": {},
+      "peer_adjustments": {
+        "net_income_billion": 1406.763933286,
+        "common_equity_billion": 9191.90882008,
+        "shares_billion": 4.5098643,
+        "nci_billion": 468.21747942,
+        "note": "TSPC AR2025 PDF p102–103; full IDR divided1e9; Tempo Scan Pacific, not Taisho",
+        "information_date": "2026-03-30"
+      }
+    },
+    "SIDO.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": "2026-02-27",
+      "publication_source": "https://investor.sidomuncul.co.id/en/financials.html",
+      "inputs": {},
+      "peer_adjustments": {
+        "net_income_billion": 1229.202,
+        "common_equity_billion": 3120.427,
+        "shares_billion": 29.4352,
+        "nci_billion": 0.007,
+        "note": "SIDO FY2025 PDF p14–16,78; millions divided1000",
+        "information_date": "2026-02-27"
+      }
+    },
+    "DVLA.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": null,
+      "publication_source": "https://www.darya-varia.com/uploads/pdf/20260325154228_laporan-keuangan-desember-2025_en.pdf",
+      "inputs": {},
+      "peer_adjustments": {}
+    },
+    "MERK.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": null,
+      "publication_source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/country-specifics/indonesia/financial-statement/2026/Laporan%20Keuangan_31.12.2025_MERK_31032026%20%284%29.pdf",
+      "inputs": {},
+      "peer_adjustments": {
+        "net_income_billion": 243.896434,
+        "common_equity_billion": 975.714314,
+        "shares_billion": 0.448,
+        "nci_billion": 0,
+        "note": "MERK FY2025 PDF p10–11, note15; thousands divided1e6; standalone statements no NCI",
+        "information_date": null
+      }
+    },
+    "SOHO.JK": {
+      "financial_period": "2025-12-31",
+      "information_date": null,
+      "publication_source": "https://www.sohoglobalhealth.com/uploads/investor/financial_information/annual_file/9/Financial_Statements.pdf",
+      "inputs": {},
+      "peer_adjustments": {
+        "net_income_billion": 600.321,
+        "common_equity_billion": 2583.002,
+        "shares_billion": 12.69168239,
+        "nci_billion": 0,
+        "note": "SOHO FY2025 PDF p100–102; millions divided1000",
+        "information_date": null
+      }
+    }
+  },
+  "core_ncwc": {
+    "2024": 8746.752,
+    "2025": 9425.202999999998,
+    "change": 678.4509999999973
+  },
+  "qualified_results": {
+    "valuation_mode": "Retrospective FY-end illustration with hindsight; NOT a 2026 investment value",
+    "financial_base": "2025-12-31",
+    "information_availability": "2026-03-30 issuer results release; earliest full-report publication qualified",
+    "valuation_date": "2025-12-31",
+    "market_observation_date": "2025-12-30",
+    "market_price_idr": 1205.0,
+    "market_price_source": "Yahoo historical Close (auto_adjust=False), audit session2026-10-23; corporate-action conventions require review",
+    "historical_fcff": {
+      "original narrow cash scope": {
+        "fcff_billion": 2834.988938207274,
+        "status": "CONDITIONAL: unreconciled D&A and partial WC definition",
+        "capex": 809.872,
+        "delta_ncwc": 759.656
+      },
+      "classified core plus financed ROU": {
+        "fcff_billion": 2894.3009382072764,
+        "status": "CONDITIONAL: unreconciled D&A and partial WC definition",
+        "capex": 831.765,
+        "delta_ncwc": 678.4509999999973
+      }
+    },
+    "wacc": {
+      "cost_equity": 0.12521,
+      "after_tax_cost_debt": 0.062400000000000004,
+      "wacc": 0.12206949999999998
+    },
+    "dcf_scenarios": {
+      "Bear": {
+        "pv_explicit_fcff": 9525.580405562534,
+        "terminal_nopat": 3737.244371567037,
+        "terminal_reinvestment": 498.29924954227164,
+        "terminal_roic": 0.15,
+        "terminal_reinvestment_rate": 0.13333333333333333,
+        "terminal_fcff": 3238.945122024765,
+        "terminal_value_at_horizon": 28901.218636870566,
+        "pv_terminal_value": 15543.56759120388,
+        "enterprise_value": 25069.147996766413,
+        "terminal_ev_share": 0.6200277565559386,
+        "assumptions": {
+          "revenue_growth": 0.03,
+          "ebit_margin": 0.11470808625300301,
+          "da_to_revenue": 0.023048931643675285,
+          "capex_to_revenue": 0.02854637614005718,
+          "ncwc_to_revenue": 0.2868174003888061,
+          "tax_rate": 0.22,
+          "wacc": 0.13206949999999998,
+          "terminal_growth": 0.02,
+          "terminal_roic": 0.15
+        },
+        "status": "ILLUSTRATIVE OPERATING EV; D&A/NCWC incomplete; not equity fair value"
+      },
+      "Base": {
+        "pv_explicit_fcff": 12783.268418425849,
+        "terminal_nopat": 4902.204343179015,
+        "terminal_reinvestment": 817.0340571965027,
+        "terminal_roic": 0.15,
+        "terminal_reinvestment_rate": 0.16666666666666669,
+        "terminal_fcff": 4085.1702859825127,
+        "terminal_value_at_horizon": 42085.00389908791,
+        "pv_terminal_value": 23660.754199496274,
+        "enterprise_value": 36444.02261792212,
+        "terminal_ev_share": 0.6492355261534877,
+        "assumptions": {
+          "revenue_growth": 0.06,
+          "ebit_margin": 0.129708086253003,
+          "da_to_revenue": 0.023048931643675285,
+          "capex_to_revenue": 0.02354637614005718,
+          "ncwc_to_revenue": 0.2668174003888061,
+          "tax_rate": 0.22,
+          "wacc": 0.12206949999999998,
+          "terminal_growth": 0.025,
+          "terminal_roic": 0.15
+        },
+        "status": "ILLUSTRATIVE OPERATING EV; D&A/NCWC incomplete; not equity fair value"
+      },
+      "Bull": {
+        "pv_explicit_fcff": 16440.76826707374,
+        "terminal_nopat": 6318.786497962448,
+        "terminal_reinvestment": 1263.7572995924897,
+        "terminal_roic": 0.15,
+        "terminal_reinvestment_rate": 0.2,
+        "terminal_fcff": 5055.029198369959,
+        "terminal_value_at_horizon": 61594.49245298143,
+        "pv_terminal_value": 36214.47819223518,
+        "enterprise_value": 52655.246459308924,
+        "terminal_ev_share": 0.6877658092479182,
+        "assumptions": {
+          "revenue_growth": 0.09,
+          "ebit_margin": 0.14470808625300302,
+          "da_to_revenue": 0.023048931643675285,
+          "capex_to_revenue": 0.02054637614005718,
+          "ncwc_to_revenue": 0.2468174003888061,
+          "tax_rate": 0.22,
+          "wacc": 0.11206949999999999,
+          "terminal_growth": 0.030000000000000002,
+          "terminal_roic": 0.15
+        },
+        "status": "ILLUSTRATIVE OPERATING EV; D&A/NCWC incomplete; not equity fair value"
+      }
+    },
+    "dcf_equity_value": null,
+    "dcf_fair_value_per_share": null,
+    "equity_block_reason": "Full economic EV-to-equity bridge unresolved; book NCI1416.046 and acquisition payable729.383 cannot be assumed zero",
+    "relative_core_two_peers": [
+      {
+        "Method": "P/E",
+        "Valid peers": 2,
+        "Peer tickers": "TSPC.JK, SOHO.JK",
+        "P25 multiple": 14.09345084999087,
+        "Median multiple": 19.050249166548525,
+        "P75 multiple": 24.007047483106184,
+        "Low FV / share": 1140.5702923961617,
+        "Central FV / share": 1541.7195187595992,
+        "High FV / share": 1942.868745123037,
+        "Status": "CALCULATED (PRELIMINARY)"
+      },
+      {
+        "Method": "EV/EBITDA",
+        "Valid peers": 0,
+        "Peer tickers": "",
+        "P25 multiple": null,
+        "Median multiple": null,
+        "P75 multiple": null,
+        "Low FV / share": null,
+        "Central FV / share": null,
+        "High FV / share": null,
+        "Status": "BLOCKED — fewer than two valid peers"
+      },
+      {
+        "Method": "P/BV",
+        "Valid peers": 2,
+        "Peer tickers": "TSPC.JK, SOHO.JK",
+        "P25 multiple": 2.731617762471149,
+        "Median multiple": 4.064928219399624,
+        "P75 multiple": 5.398238676328099,
+        "Low FV / share": 1406.1736145963534,
+        "Central FV / share": 2092.53098507345,
+        "High FV / share": 2778.8883555505477,
+        "Status": "CALCULATED (PRELIMINARY)"
+      }
+    ],
+    "relative_broader_four_peer_sensitivity": [
+      {
+        "Method": "P/E",
+        "Valid peers": 4,
+        "Peer tickers": "TSPC.JK, SIDO.JK, MERK.JK, SOHO.JK",
+        "P25 multiple": 8.390847275368813,
+        "Median multiple": 11.033906374786719,
+        "P75 multiple": 16.93933161202113,
+        "Low FV / share": 679.0637177639956,
+        "Central FV / share": 892.9641117789483,
+        "High FV / share": 1370.884861015498,
+        "Status": "CALCULATED (PRELIMINARY)"
+      },
+      {
+        "Method": "EV/EBITDA",
+        "Valid peers": 0,
+        "Peer tickers": "",
+        "P25 multiple": null,
+        "Median multiple": null,
+        "P75 multiple": null,
+        "Low FV / share": null,
+        "Central FV / share": null,
+        "High FV / share": null,
+        "Status": "BLOCKED — fewer than two valid peers"
+      },
+      {
+        "Method": "P/BV",
+        "Valid peers": 4,
+        "Peer tickers": "TSPC.JK, SIDO.JK, MERK.JK, SOHO.JK",
+        "P25 multiple": 1.5031931911856624,
+        "Median multiple": 3.316005929608085,
+        "P75 multiple": 5.5032798129262765,
+        "Low FV / share": 773.8090709931439,
+        "Central FV / share": 1707.0031203200565,
+        "High FV / share": 2832.9611020236657,
+        "Status": "CALCULATED (PRELIMINARY)"
+      }
+    ],
+    "relative_warnings": [
+      "Peer NCI/EV bridge incomplete: affected EV/EBITDA multiples excluded",
+      "Peer selection is an analyst judgment; quantiles are not confidence intervals",
+      "Market price date differs from financial period: inspect actual last trading day"
+    ],
+    "reconciled_fair_value": null,
+    "reconciliation_status": "BLOCKED: no verified DCF equity output; method weights cannot create missing evidence",
+    "recommendation": "NOT RATED",
+    "ttm_2026_06_30": {
+      "revenue": 37724.057,
+      "reported_operating_ebit": 4505.241,
+      "parent_net_income": 3609.523,
+      "status": "verified arithmetic from reported flows; current valuation still needs stub/bridge and cost-of-capital review"
+    }
+  },
+  "critical_unresolved": [
+    "D&A reconciliation13.949 and segment residual14.777",
+    "Complete operating NCWC and organic movements",
+    "Nonoperating asset fair values, NCI economic value, pension and other claims",
+    "Contemporaneous sourced WACC, terminal ROIC and forecasts",
+    "October2026 stub forecast/bridge, current shares and verified market price",
+    "Peer normalization, DVLA financial report access and remaining publication dates"
+  ]
+}
